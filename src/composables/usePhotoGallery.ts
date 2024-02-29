@@ -96,7 +96,7 @@ export const usePhotoGallery = () => {
             photoSaved.filepath !== photo.filepath)
 
         const filename = photo.filepath.substr(photo.filepath.lastIndexOf('/') + 1)
-        await Filesytem.deleteFile({
+        await Filesystem.deleteFile({
             path: filename,
             directory: Directory.Data
         })
